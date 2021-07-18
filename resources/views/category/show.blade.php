@@ -12,7 +12,7 @@
         <p class="t-color"> نام کتاب: {{$pro->name}}</p>
         <p class="t-color"> مولف: {{$pro->author->name}}</p>
         <p class="t-color"> قیمت: {{$pro->price}}</p>
-        <a href="/sampleDownload/{{$pro->sampleFile}}"><button class="btn-sample">دانلود نسخه نمونه</button></a>
+        <a href="/sampleDownload/{{$pro->id}}"><button class="btn-sample">دانلود نسخه نمونه</button></a>
 
           {{--@if (Route::has('login'))--}}
               {{--@auth--}}
