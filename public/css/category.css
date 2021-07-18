@@ -1,0 +1,95 @@
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background:#dcdbdb;
+    color:#222;
+    font-family:'WYekan', sans-serif;
+    line-height: 22px;
+}
+.subtitle {
+    position:relative;
+    padding:0px;
+    margin:0px 0px 20px 0px;
+    line-height:normal;
+    font-size:20px;
+    color:#000000;
+    border-bottom:2px solid #ddd;
+    padding-bottom:3px;
+}
+
+.box-category ul, .list-item {
+    list-style: none;
+    margin-bottom:20px;
+    margin-top:-5px;
+    padding:0;
+}
+.box-category > ul > li, .list-item > li {
+    display: block;
+    position: relative;
+}
+.box-category .down {
+    top:2px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    width:16px;
+    height:24px;
+    /*background: transparent url(../image/plus.png) 0px 4px no-repeat;*/
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+}
+.box-category .down:hover {
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.box-category ul li a, .list-item li a {
+    padding:5px 0px 5px 12px;
+    color:#222;
+    display: block;
+    /*background: transparent url(../image/bullet-dark.png) 0px 10px no-repeat;*/
+}
+.box-category ul li.double a {
+    display: inline-block;
+    margin: 0;
+}
+.box-category ul li { position: relative; }
+.box-category ul li ul li + li { border-top:1px dotted #ccc; }
+.box-category > ul > li a.active + .down { background-position: 0px -12px; }
+.box-category > ul > li > a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.box-category > ul > li ul {
+    display: none;
+    padding-left: 10px;
+    margin-bottom:5px;
+}
+.box-category > ul > li a.active { font-weight: bold; }
+.box-category > ul > li > a.active { margin-bottom:5px; }
+.box-category > ul > li a.active + ul { display: block; }
+.box-category a:hover, .list-item a:hover {
+    /*text-decoration:underline;*/
+    /*color:#3e7cb4;*/
+    color: #2232ee;
+}
+.box-category > ul > li ul li a { margin-right: 16px; }
+.box-category > ul > li ul li a:hover, .list-item a:hover { margin-right: 16px; }
+.box-category > ul > li ul > li > a { text-decoration: none; }
+
+#column-left
+{
+    float: right;
+    display: block;
+    margin-left:7px;
+    border-radius:0px;
+    margin-bottom:15px;
+}
+
+
+
